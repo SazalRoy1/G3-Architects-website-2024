@@ -4,7 +4,16 @@
 
 /* shared styles */
 .btn-primary{
-    
+ 
+    font-size: 1rem;
+    border-radius: 8px;
+
+    padding: 20px 25px;
+    width: 180px;
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0;
 }
 
 *{
@@ -63,4 +72,38 @@ nav li a {
 
 .bannar-description{
      color: rgb(114, 114, 114);
+}
+.bannar img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* main style */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* responsive style */
+/* mobile devices */
+@media screen and  (max-width:576px) {
+     header{
+      padding: 20px;
+     }
+
+     nav{
+        flex-direction: column;
+        text-align: center;
+     }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+    padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
