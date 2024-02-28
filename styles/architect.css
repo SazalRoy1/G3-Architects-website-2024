@@ -15,6 +15,10 @@
     cursor: pointer;
     border: 0;
 }
+/* sahared style */
+.text-light-gray{
+    color: #727272
+}
 
 *{
   font-family: "Work Sans", sans-serif;
@@ -70,9 +74,6 @@ nav li a {
 
 
 
-.bannar-description{
-     color: rgb(114, 114, 114);
-}
 .bannar img{
     margin-top: 20px;
     width: 100%;
@@ -81,7 +82,7 @@ nav li a {
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 
@@ -120,9 +121,14 @@ main{
       padding: 20px;
      }
 
-     nav{
+     nav,
+     .teams-container 
+     {
         flex-direction: column;
         text-align: center;
+     }
+     .team-img-container{
+        grid-template-columns: 1fr;
      }
 }
 
@@ -132,7 +138,21 @@ main{
     header{
     padding: 50px;
     }
-    nav{
+    nav,
+    .teams-container 
+
+    {
         flex-direction: column;
+        align-items: center;
+     
+        width:100%;
     }
+      .team-img-container{
+         text-align: center;
+      }
+      .team-content{
+         padding-left:20px;
+         padding-left: 20px;
+        text-align: center;
+      }
 }
